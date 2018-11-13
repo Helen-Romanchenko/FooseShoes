@@ -49,11 +49,11 @@ This template was used as a study project for improving skills in coding HTML, C
 
 ### Tests
 
-![site-audit](https://github.com/Helen-Romanchenko/Fosseshoes/blob/master/description/site-audit.png)
+![site-audit](https://github.com/Helen-Romanchenko/FooseShoes/blob/master/description/site-audit.png)
 
 *****
 
-***Live Demo:***  https://helen-romanchenko.github.io/Fosseshoes/
+***Live Demo:***  https://helen-romanchenko.github.io/FooseShoes/
 
 *****
 
@@ -61,8 +61,8 @@ This template was used as a study project for improving skills in coding HTML, C
 
 **Home page**
 
-![preview a desktop version of the home page](https://github.com/Helen-Romanchenko/Fosseshoes/blob/master/description/home.jpg)
+![preview a desktop version of the home page](https://github.com/Helen-Romanchenko/FooseShoes/blob/master/description/home.jpg)
 
 **Product page**
 
-![preview a desktop version of the product page](https://github.com/Helen-Romanchenko/Fosseshoes/blob/master/description/products.jpg)
+![preview a desktop version of the product page](https://github.com/Helen-Romanchenko/FooseShoes/blob/master/description/products.jpg)
