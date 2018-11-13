@@ -49,11 +49,12 @@ This template was used as a study project for improving skills in coding HTML, C
 
 ### Tests
 
-![site-audit](https://github.com/Helen-Romanchenko/FooseShoes/blob/master/description/site-audit.png)
+![site-audit](https://github.com/Helen-Romanchenko/FooseShoes/blob/master/description/audit.png)
 
 *****
 
 ***Live Demo:***  https://helen-romanchenko.github.io/FooseShoes/
+
 
 *****
 
