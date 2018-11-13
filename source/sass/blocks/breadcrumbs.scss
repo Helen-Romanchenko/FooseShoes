@@ -1,0 +1,37 @@
+.breadcrumbs {
+  @include list-reset;
+  margin-right: auto;
+  padding-top: 4px;
+}
+
+.breadcrumbs li {
+  position: relative;
+  display: inline;
+  padding-right: 20px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid $btn-color;
+  border-top: none;
+  border-left: none;
+  transform: rotate(-45deg);
+}
+
+.breadcrumbs__current::after {
+  display: none;
+}
+
+.breadcrumbs a {
+  @include set-font(0.75rem, 0.75rem, 700, $btn-color);
+
+  &[href]:hover {
+    color: $green;
+  }
+}
+

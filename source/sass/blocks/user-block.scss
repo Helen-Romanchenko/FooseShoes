@@ -1,0 +1,25 @@
+.user-block {
+  margin-right: 20px;
+  padding-top: 12px;
+  font-family: $font-main;
+  @include set-font(0.6875rem,  1.5625rem, 400, $gray-user-block);
+}
+
+.user-block a {
+  font: inherit;
+  color: inherit;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active {
+    color: $green;
+  }
+}
+
+@media (min-width: $width-md) {
+  .user-block {
+    padding-right: 24px;
+    padding-left: 22px;
+    height: 100%;
+  }
+}

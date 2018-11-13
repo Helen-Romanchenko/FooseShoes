@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FooseShoes-Products</title>
+    <meta name="description" content="Stylish shoes shop">
+    <meta name="keywords" content="shoes, stylish shoes, women shoes, men shoes, children shoes, new collection, sale" lang="en">
+    <link rel="preload" href="fonts/STHeitiSC-Medium.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/Aller-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/Aller-Light.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/Aller-Bold.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"> </include>
+    </div>
+    <header class="page-header">
+      <div class="page-header__row">
+        <div class="page-header__block container--wide">
+          <h1 class="page-header__logo logo">
+            <a class="logo__link" href="index.html">FooseShoes</a>
+          </h1>
+          <form class="page-header__search page-header__search--top">
+            <label for="search-top" class="visually-hidden">Type in a request</label>
+            <div class="page-header__search-box"  aria-label="search">
+              <input class="page-header__search-input" type="search" id="search-top" placeholder="search" autocomplete="off">
+              <button class="page-header__search-icon" type="button">search
+                <svg width="14" height="14" role="img">
+                  <use xlink:href="#icon-search"></use>
+                </svg>
+              </button>
+              <ul class="page-header__search-list">
+                <li class="page-header__search-item">Women</li>
+                <li class="page-header__search-item">Men</li>
+                <li class="page-header__search-item">Kidz</li>
+                <li class="page-header__search-item">Buffalo Decolleté</li>
+                <li class="page-header__search-item">Even&Odd</li>
+                <li class="page-header__search-item">Pink Shoes</li>
+              </ul>
+              <ul class="page-header__search-autocomplete"></ul>
+            </div>
+          </form>
+          <div class="user-block">
+            <a class="user-block__login" href="#">Login</a> or
+            <a class="user-block__register" href="#">Register</a>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__row">
+        <div class="page-header__block container--wide">
+          <nav class="main-nav main-nav--nojs main-nav--opened">
+            <button class="main-nav__toggle" type="button"><span>Menu</span></button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="site-list__item">
+                <a class="active">Products</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">About</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Pages</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Blog</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="page-header__search page-header__search--bottom">
+            <label for="search-bottom" class="page-header__search-label visually-hidden">Type in a request</label>
+            <div class="page-header__search-box"  aria-label="search">
+              <input class="page-header__search-input" type="search" id="search-bottom" placeholder="search" autocomplete="off">
+              <button class="page-header__search-icon" type="button">search
+                <svg width="14" height="14" role="img">
+                  <use xlink:href="#icon-search"></use>
+                </svg>
+              </button>
+              <ul class="page-header__search-list">
+                <li class="page-header__search-item">Women</li>
+                <li class="page-header__search-item">Men</li>
+                <li class="page-header__search-item">Kidz</li>
+                <li class="page-header__search-item">Buffalo Decolleté</li>
+                <li class="page-header__search-item">Even&Odd</li>
+                <li class="page-header__search-item">Pink Shoes</li>
+              </ul>
+              <ul class="page-header__search-autocomplete"></ul>
+            </div>
+          </form>
+          <div class="page-header__user-actions">
+            <a class="page-header__wishlist" href="#" aria-label="wishlist">
+              <div class="page-header__icon-area">
+                <svg width="16" height="16" role="img">
+                  <use xlink:href="#icon-wishlist"></use>
+                </svg>
+                <span>30</span>Wishlist</div>
+            </a>
+            <a class="page-header__cart" href="#" aria-label="cart">
+              <div class="page-header__icon-area">
+                <svg width="16" height="13" role="img">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+                <span>0</span>Cart</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="banner">
+        <div class="banner__wrapper container">
+          <div class="banner__promo promo">
+            <div class="banner__box">
+              <p class="banner__price promo__price">$145,99</p>
+              <h3 class="promo__title">Pink Shoes <br>2013 Collection</h3>
+            </div>
+            <p class="promo__description">
+              Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..
+            </p>
+          </div>
+        </div>
+      </section>
+      <article class="catalogue">
+        <h2 class="visually-hidden">Catalog</h2>
+        <section class="filters">
+          <div class="container">
+            <div class="filters__wrapper">
+              <h2 class="filters__title title">Shop by</h2>
+              <div class="filters__select-wrapper">
+                <select class="filters__select filters__select--brands" name="brands" id="brands">
+                  <option value="brands" selected="selected">Brands</option>
+                  <option value="buffalo-decolletè">Buffalo Decolletè</option>
+                  <option value="even-odd">Even&Odd</option>
+                  <option value="prada">Prada</option>
+                  <option value="casadei">Casadei</option>
+                  <option value="mellow-yellow">Mellow Yellow</option>
+                </select>
+              </div>
+              <div class="filters__select-wrapper">
+                <select class="filters__select filters__select--categories" name="categories" id="categories">
+                  <option value="categories" selected="selected">Categories</option>
+                  <option value="women">Women</option>
+                  <option value="men">Men</option>
+                  <option value="children">Kidz</option>
+                </select>
+              </div>
+              <div class="filters__select-wrapper">
+                <select class="filters__select filters__select--price" name="price" id="price">
+                  <option value="price" selected="selected">Price</option>
+                  <option value="75-200">$75-200</option>
+                  <option value="201-400">$201-400</option>
+                  <option value=">400">$401 and more</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products products--catalogue container">
+          <div class="products__row">
+            <h2 class="products__title title">All Products</h2>
+            <ul class="breadcrumbs">
+              <li><a href="index.html">Home</a></li>
+              <li class="breadcrumbs__current"><a>All Products</a></li>
+            </ul>
+            <div class="products__view">
+              View as
+              <button class="products__view-option products__view-tile view-active" aria-label="tile view" type="button">
+                <svg width="15" height="15" role="img">
+                  <use xlink:href="#icon-tile"></use>
+                </svg>
+                Tile view
+              </button>
+              <button class="products__view-option products__view-list" aria-label="list view" type="button">
+                <svg width="16" height="12" role="img">
+                  <use xlink:href="#icon-list"></use>
+                </svg>
+                List view
+              </button>
+            </div>
+            <div class="products__select-wrapper">
+              <select class="products__sort btn btn--sort" name="sort" id="sort">
+                <option value="alphabetically">Sort alphabetically</option>
+                <option value="lowprice">Sort by low price</option>
+                <option value="highprice">Sort by high price</option>
+                <option value="popular">Sort by popularity</option>
+                <option value="new">Show new</option>
+              </select>
+            </div>
+          </div>
+          <ul class="products__list products__list--tile">
+            <li class="products__item product">
+              <div class="product__photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/even-odd-1.webp">
+                  <img class="product__img" src="img/content/even-odd-1.jpg" alt="Even&Odd-1" width="220" height="220" >
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__price">$145.90</div>
+                <h4 class="product__title">Even&Odd</h4>
+                <ul class="product__actions-menu actions">
+                  <li class="actions__item actions__item--view">
+                    <a class="actions__link" href="#" aria-label="watch" title="Watch the shoes">
+                      <svg width="16" height="10" role="img">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      Watch the shoes
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--wishlist">
+                    <a class="actions__link" href="#" aria-label="wishlist" title="Add to wishlist">
+                      <svg width="16" height="16" role="img">
+                        <use xlink:href="#icon-wishlist"></use>
+                      </svg>
+                      Add to wishlist
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--share">
+                    <a class="actions__link" href="#" aria-label="share" title="Share">
+                      <svg width="16" height="13" role="img">
+                        <use xlink:href="#icon-share"></use>
+                      </svg>
+                      Share
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--buy">
+                    <a class="actions__link" href="#" aria-label="buy" title="Buy">
+                      <svg width="16" height="15" role="img">
+                        <use xlink:href="#icon-buy"></use>
+                      </svg>
+                      Buy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="products__item product">
+              <div class="product__photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/even-odd-2.webp">
+                  <img class="product__img" src="img/content/even-odd-2.jpg" alt="Even&Odd-2" width="220" height="220" >
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__price">$145.90</div>
+                <h4 class="product__title">Even&Odd</h4>
+                <ul class="product__actions-menu actions">
+                  <li class="actions__item actions__item--view">
+                    <a class="actions__link" href="#" aria-label="watch" title="Watch the shoes">
+                      <svg width="16" height="10" role="img">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      Watch the shoes
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--wishlist">
+                    <a class="actions__link" href="#" aria-label="wishlist" title="Add to wishlist">
+                      <svg width="16" height="16" role="img">
+                        <use xlink:href="#icon-wishlist"></use>
+                      </svg>
+                      Add to wishlist
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--share">
+                    <a class="actions__link" href="#" aria-label="share" title="Share">
+                      <svg width="16" height="13" role="img">
+                        <use xlink:href="#icon-share"></use>
+                      </svg>
+                      Share
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--buy">
+                    <a class="actions__link" href="#" aria-label="buy" title="Buy">
+                      <svg width="16" height="15" role="img">
+                        <use xlink:href="#icon-buy"></use>
+                      </svg>
+                      Buy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product__badge product__badge--sale">On sale!</div>
+            </li>
+            <li class="products__item product">
+              <div class="product__photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/buffalo-decollete-1.webp">
+                  <img class="product__img" src="img/content/buffalo-decollete-1.jpg" alt="Buffalo Decolleté-1" width="220" height="220" >
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__price">$145.90</div>
+                <h4 class="product__title">Buffalo Decolleté</h4>
+                <ul class="product__actions-menu actions">
+                  <li class="actions__item actions__item--view">
+                    <a class="actions__link" href="#" aria-label="watch" title="Watch the shoes">
+                      <svg width="16" height="10" role="img">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      Watch the shoes
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--wishlist">
+                    <a class="actions__link" href="#" aria-label="wishlist" title="Add to wishlist">
+                      <svg width="16" height="16" role="img">
+                        <use xlink:href="#icon-wishlist"></use>
+                      </svg>
+                      Add to wishlist
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--share">
+                    <a class="actions__link" href="#" aria-label="share" title="Share">
+                      <svg width="16" height="13" role="img">
+                        <use xlink:href="#icon-share"></use>
+                      </svg>
+                      Share
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--buy">
+                    <a class="actions__link" href="#" aria-label="buy" title="Buy">
+                      <svg width="16" height="15" role="img">
+                        <use xlink:href="#icon-buy"></use>
+                      </svg>
+                      Buy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="products__item product">
+              <div class="product__photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/even-odd-3.webp">
+                  <img class="product__img" src="img/content/even-odd-3.jpg" alt="Even&Odd-3" width="220" height="220" >
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__price">$145.90</div>
+                <h4 class="product__title">Even&Odd</h4>
+                <ul class="product__actions-menu actions">
+                  <li class="actions__item actions__item--view">
+                    <a class="actions__link" href="#" aria-label="watch" title="Watch the shoes">
+                      <svg width="16" height="10" role="img">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      Watch the shoes
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--wishlist">
+                    <a class="actions__link" href="#" aria-label="wishlist" title="Add to wishlist">
+                      <svg width="16" height="16" role="img">
+                        <use xlink:href="#icon-wishlist"></use>
+                      </svg>
+                      Add to wishlist
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--share">
+                    <a class="actions__link" href="#" aria-label="share" title="Share">
+                      <svg width="16" height="13" role="img">
+                        <use xlink:href="#icon-share"></use>
+                      </svg>
+                      Share
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--buy">
+                    <a class="actions__link" href="#" aria-label="buy" title="Buy">
+                      <svg width="16" height="15" role="img">
+                        <use xlink:href="#icon-buy"></use>
+                      </svg>
+                      Buy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="products__item product">
+              <div class="product__photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/even-odd-4.webp">
+                  <img class="product__img" src="img/content/even-odd-4.jpg" alt="Even&Odd-4" width="220" height="220" >
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__price">$145.90</div>
+                <h4 class="product__title">Even&Odd</h4>
+                <ul class="product__actions-menu actions">
+                  <li class="actions__item actions__item--view">
+                    <a class="actions__link" href="#" aria-label="watch" title="Watch the shoes">
+                      <svg width="16" height="10" role="img">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      Watch the shoes
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--wishlist">
+                    <a class="actions__link" href="#" aria-label="wishlist" title="Add to wishlist">
+                      <svg width="16" height="16" role="img">
+                        <use xlink:href="#icon-wishlist"></use>
+                      </svg>
+                      Add to wishlist
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--share">
+                    <a class="actions__link" href="#" aria-label="share" title="Share">
+                      <svg width="16" height="13" role="img">
+                        <use xlink:href="#icon-share"></use>
+                      </svg>
+                      Share
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--buy">
+                    <a class="actions__link" href="#" aria-label="buy" title="Buy">
+                      <svg width="16" height="15" role="img">
+                        <use xlink:href="#icon-buy"></use>
+                      </svg>
+                      Buy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="products__item product">
+              <div class="product__photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/buffalo-decollete-2.webp">
+                  <img class="product__img" src="img/content/buffalo-decollete-2.jpg" alt="Buffalo Decolleté-2" width="220" height="220" >
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__price">$145.90</div>
+                <h4 class="product__title">Buffalo Decolleté</h4>
+                <ul class="product__actions-menu actions">
+                  <li class="actions__item actions__item--view">
+                    <a class="actions__link" href="#" aria-label="watch" title="Watch the shoes">
+                      <svg width="16" height="10" role="img">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      Watch the shoes
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--wishlist">
+                    <a class="actions__link" href="#" aria-label="wishlist" title="Add to wishlist">
+                      <svg width="16" height="16" role="img">
+                        <use xlink:href="#icon-wishlist"></use>
+                      </svg>
+                      Add to wishlist
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--share">
+                    <a class="actions__link" href="#" aria-label="share" title="Share">
+                      <svg width="16" height="13" role="img">
+                        <use xlink:href="#icon-share"></use>
+                      </svg>
+                      Share
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--buy">
+                    <a class="actions__link" href="#" aria-label="buy" title="Buy">
+                      <svg width="16" height="15" role="img">
+                        <use xlink:href="#icon-buy"></use>
+                      </svg>
+                      Buy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product__badge product__badge--out-of-stock">Out of stock</div>
+            </li>
+            <li class="products__item product">
+              <div class="product__photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/even-odd-1.webp">
+                  <img class="product__img" src="img/content/even-odd-1.jpg" alt="Even&Odd-1" width="220" height="220" >
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__price">$145.90</div>
+                <h4 class="product__title">Even&Odd</h4>
+                <ul class="product__actions-menu actions">
+                  <li class="actions__item actions__item--view">
+                    <a class="actions__link" href="#" aria-label="watch" title="Watch the shoes">
+                      <svg width="16" height="10" role="img">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      Watch the shoes
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--wishlist">
+                    <a class="actions__link" href="#" aria-label="wishlist" title="Add to wishlist">
+                      <svg width="16" height="16" role="img">
+                        <use xlink:href="#icon-wishlist"></use>
+                      </svg>
+                      Add to wishlist
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--share">
+                    <a class="actions__link" href="#" aria-label="share" title="Share">
+                      <svg width="16" height="13" role="img">
+                        <use xlink:href="#icon-share"></use>
+                      </svg>
+                      Share
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--buy">
+                    <a class="actions__link" href="#" aria-label="buy" title="Buy">
+                      <svg width="16" height="15" role="img">
+                        <use xlink:href="#icon-buy"></use>
+                      </svg>
+                      Buy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="products__item product">
+              <div class="product__photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/even-odd-2.webp">
+                  <img class="product__img" src="img/content/even-odd-2.jpg" alt="Even&Odd-2" width="220" height="220" >
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__price">$145.90</div>
+                <h4 class="product__title">Even&Odd</h4>
+                <ul class="product__actions-menu actions">
+                  <li class="actions__item actions__item--view">
+                    <a class="actions__link" href="#" aria-label="watch" title="Watch the shoes">
+                      <svg width="16" height="10" role="img">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      Watch the shoes
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--wishlist">
+                    <a class="actions__link" href="#" aria-label="wishlist" title="Add to wishlist">
+                      <svg width="16" height="16" role="img">
+                        <use xlink:href="#icon-wishlist"></use>
+                      </svg>
+                      Add to wishlist
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--share">
+                    <a class="actions__link" href="#" aria-label="share" title="Share">
+                      <svg width="16" height="13" role="img">
+                        <use xlink:href="#icon-share"></use>
+                      </svg>
+                      Share
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--buy">
+                    <a class="actions__link" href="#" aria-label="buy" title="Buy">
+                      <svg width="16" height="15" role="img">
+                        <use xlink:href="#icon-buy"></use>
+                      </svg>
+                      Buy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product__badge product__badge--sale">On sale!</div>
+            </li>
+            <li class="products__item product">
+              <div class="product__photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/buffalo-decollete-1.webp">
+                  <img class="product__img" src="img/content/buffalo-decollete-1.jpg" alt="Buffalo Decolleté-1" width="220" height="220" >
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__price">$145.90</div>
+                <h4 class="product__title">Buffalo Decolleté</h4>
+                <ul class="product__actions-menu actions">
+                  <li class="actions__item actions__item--view">
+                    <a class="actions__link" href="#" aria-label="watch" title="Watch the shoes">
+                      <svg width="16" height="10" role="img">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                      Watch the shoes
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--wishlist">
+                    <a class="actions__link" href="#" aria-label="wishlist" title="Add to wishlist">
+                      <svg width="16" height="16" role="img">
+                        <use xlink:href="#icon-wishlist"></use>
+                      </svg>
+                      Add to wishlist
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--share">
+                    <a class="actions__link" href="#" aria-label="share" title="Share">
+                      <svg width="16" height="13" role="img">
+                        <use xlink:href="#icon-share"></use>
+                      </svg>
+                      Share
+                    </a>
+                  </li>
+                  <li class="actions__item actions__item--buy">
+                    <a class="actions__link" href="#" aria-label="buy" title="Buy">
+                      <svg width="16" height="15" role="img">
+                        <use xlink:href="#icon-buy"></use>
+                      </svg>
+                      Buy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <section class="additional container">
+        <h2 class="visually-hidden">Additinal info</h2>
+        <div class="additional__wrapper">
+          <div class="additional__block additional__block--shipping">
+            <h5 class="additional__title">Free Shipping</h5>
+            <p class="additional__content">Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem,</p>
+          </div>
+          <div class="additional__block additional__block--testimonials">
+            <h5 class="additional__title">Testimonials</h5>
+            <blockquote class="additional__testimonial">
+              <p class="additional__content">vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit <a href="#">[...]</a></p>
+              <cite>- John Doe -</cite>
+            </blockquote>
+          </div>
+          <div class="additional__block additional__block--news">
+            <h5 class="additional__title">Blog news</h5>
+            <div class="additional__news-list" id="news-list">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="widgets container">
+        <h2 class="visually-hidden">Widgets</h2>
+        <div class="widgets__wrapper">
+          <div class="widgets__item">
+            <h4 class="widgets__title">Text widget</h4>
+            <p class="widgets__text">
+            Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+            </p>
+          </div>
+          <div class="widgets__item widgets__item--twitter">
+            <h4 class="widgets__title">TWITTER WIDGET</h4>
+            <div class="widgets__twitter-wrapper" id="twitter-widget">
+            </div>
+          </div>
+          <div class="widgets__item widgets__item--flickr">
+            <h4 class="widgets__title">FLICKR WIDGET</h4>
+            <div class="widgets__flickr-gallery">
+              <a class="widgets__flickr-item" href="img/flickr-1.png" data-fancybox="flickr-gallery" data-caption="Flickr image 1">
+                <picture>
+                  <source srcset="img/content/thumbnail-flickr-1.webp" type="image/webp">
+                  <img class="widgets__flickr-thumbnail" src="img/content/thumbnail-flickr-1.png" alt="flickr-image-1">
+                </picture>
+              </a>
+              <a class="widgets__flickr-item" href="img/flickr-2.png" data-fancybox="flickr-gallery" data-caption="Flickr image 2">
+                <picture>
+                  <source srcset="img/content/thumbnail-flickr-2.webp" type="image/webp">
+                  <img class="widgets__flickr-thumbnail" src="img/content/thumbnail-flickr-2.png" alt="flickr-image-2">
+                </picture>
+              </a>
+              <a class="widgets__flickr-item" href="img/flickr-3.png" data-fancybox="flickr-gallery" data-caption="Flickr image 3">
+                <picture>
+                  <source srcset="img/content/thumbnail-flickr-3.webp" type="image/webp">
+                  <img class="widgets__flickr-thumbnail" src="img/content/thumbnail-flickr-3.png" alt="flickr-image-3">
+                </picture>
+              </a>
+              <a class="widgets__flickr-item" href="img/flickr-4.png" data-fancybox="flickr-gallery" data-caption="Flickr image 4">
+                <picture>
+                  <source srcset="img/content/thumbnail-flickr-4.webp" type="image/webp">
+                  <img class="widgets__flickr-thumbnail" src="img/content/thumbnail-flickr-4.png" alt="flickr-image-4">
+                </picture>
+              </a>
+              <a class="widgets__flickr-item" href="img/flickr-5.png" data-fancybox="flickr-gallery" data-caption="Flickr image 5">
+                <picture>
+                  <source srcset="img/content/thumbnail-flickr-5.webp" type="image/webp">
+                  <img class="widgets__flickr-thumbnail" src="img/content/thumbnail-flickr-5.png" alt="flickr-image-5">
+                </picture>
+              </a>
+              <a class="widgets__flickr-item" href="img/flickr-6.png" data-fancybox="flickr-gallery" data-caption="Flickr image 6">
+                <picture>
+                  <source srcset="img/content/thumbnail-flickr-6.webp" type="image/webp">
+                  <img class="widgets__flickr-thumbnail" src="img/content/thumbnail-flickr-6.png" alt="flickr-image-6">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback container--page-footer">
+        <h2 class="visually-hidden">Feedback</h2>
+        <div class="feedback__wrapper container">
+          <form  class="feedback__email-form" action="#" method="post">
+            <label class="visually-hidden" for="email">Enter email for newsletter</label>
+            <input class="feedback__email-input" type="email" name="email" id="email" placeholder="Enter email for newsletter">
+            <button class="feedback__email-submit" type="submit">Send</button>
+          </form>
+          <ul class="feedback__social social">
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#" aria-label="facebook">
+                <svg width="10" height="20" role="img">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#" aria-label="twitter">
+                <svg width="19" height="16" role="img">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--google" href="#" aria-label="google">
+                <svg width="20" height="17" role="img">
+                  <use xlink:href="#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--linkedin" href="#" aria-label="linkedin">
+                <svg width="18" height="19" role="img">
+                  <use xlink:href="#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--flickr" href="#" aria-label="flickr">
+                <svg width="20" height="8" role="img">
+                  <use xlink:href="#icon-flickr"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page-footer-info">
+        <div class="page-footer-info__wrapper container">
+          <h2 class="visually-hidden">Copyright, support, terms and conditions</h2>
+          <div class="page-footer-info__copyright">
+          Copyright © Fooseshoes 2013. <br>
+          Designed by EnzoLiVolti.
+            <p class="page-footer-info__developer">Built by <a href="https://github.com/Helen-Romanchenko" target="_blank" rel="noopener">Helen Romanchenko</a></p>
+          </div>
+          <nav class="page-footer__nav">
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__nav-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#">Support</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#">Terms and Conditions</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#">Faqs</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </footer>
+    <section class="pop-up pop-up--register">
+      <button class="close" type="button">Close</button>
+      <div class="pop-up__wrapper">
+        <h2 class="title">Sign in</h2>
+        <p class="pop-up__text">Please fill in this form to create an account.</p>
+        <form  class="pop-up__form" action="#" method="post">
+          <label class="pop-up__label" for="username">Username</label>
+          <input class="pop-up__input" type="text" name="login" id="username" placeholder="Your name" required autocomplete="on">
+          <label class="pop-up__label" for="email-register">E-mail</label>
+          <input class="pop-up__input" type="email" name="email" id="email-register" placeholder="email@domen.com" required autocomplete="on">
+          <label class="pop-up__label" for="password-register">Password</label>
+          <input class="pop-up__input" type="password" name="password" id="password-register" required>
+          <label class="pop-up__label" for="password-retype-register">Retype password</label>
+          <input class="pop-up__input" type="password" name="password-retype" id="password-retype-register" required>
+          <label class="pop-up__checkbox-remember">
+            <input type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
+            Remember me
+          </label>
+          <p class="pop-up__text">Register with</p>
+          <div class="pop-up__social social">
+            <div class="social__item">
+              <a class="social__link social__link--fb" href="#" aria-label="facebook">
+                <svg width="10" height="20" role="img">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a class="social__link social__link--twitter" href="#" aria-label="twitter">
+                <svg width="19" height="16" role="img">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a class="social__link social__link--google" href="#" aria-label="google">
+                <svg width="20" height="17" role="img">
+                  <use xlink:href="#icon-google"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a class="social__link social__link--linkedin" href="#" aria-label="linkedin">
+                <svg width="18" height="19" role="img">
+                  <use xlink:href="#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a class="social__link social__link--flickr" href="#" aria-label="flickr">
+                <svg width="20" height="8" role="img">
+                  <use xlink:href="#icon-flickr"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <button class="pop-up__btn-submit btn btn--pop-up" type="submit">Register</button>
+        </form>
+      </div>
+      <p class="pop-up__change-link">Already a member?
+        <button class="pop-up__btn-redirect btn btn--change-link" type="button">Go and log in</button>
+      </p>
+    </section>
+    <section class="pop-up pop-up--login">
+      <button class="close" type="button">Close</button>
+      <div class="pop-up__wrapper">
+        <h2 class="title">Login</h2>
+        <p class="pop-up__text">Please fill in this form to log in an account.</p>
+        <form  class="pop-up__form" action="#" method="post">
+          <label class="pop-up__label" for="email-login">E-mail</label>
+          <input class="pop-up__input" type="email" name="email" id="email-login" placeholder="email@domen.com" required autocomplete="on">
+          <label class="pop-up__label" for="password-login">Password</label>
+          <input class="pop-up__input" type="password" name="password" id="password-login" required>
+          <label class="pop-up__checkbox-remember">
+            <input type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
+            Remember me
+          </label>
+          <a class="pop-up__restore" href="#">I forgot my password</a>
+          <p class="pop-up__text">Login with</p>
+          <div class="pop-up__social social">
+            <div class="social__item">
+              <a class="social__link social__link--fb" href="#" aria-label="facebook">
+                <svg width="10" height="20" role="img">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a class="social__link social__link--twitter" href="#" aria-label="twitter">
+                <svg width="19" height="16" role="img">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a class="social__link social__link--google" href="#" aria-label="google">
+                <svg width="20" height="17" role="img">
+                  <use xlink:href="#icon-google"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a class="social__link social__link--linkedin" href="#" aria-label="linkedin">
+                <svg width="18" height="19" role="img">
+                  <use xlink:href="#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a class="social__link social__link--flickr" href="#" aria-label="flickr">
+                <svg width="20" height="8" role="img">
+                  <use xlink:href="#icon-flickr"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <button class="pop-up__btn-submit btn btn--pop-up" type="submit">  Login me up</button>
+        </form>
+      </div>
+      <p class="pop-up__change-link">Not a member yet?
+        <button class="pop-up__btn-redirect btn btn--change-link" type="button">Go and create an account</button>
+      </p>
+    </section>
+    <div class="overlay"></div>
+    <script src="js/jQuery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main-nav.min.js" async></script>
+    <script src="js/authorization-forms.min.js" async></script>
+    <script src="js/search.min.js" async></script>
+    <script src="js/grid-change.min.js" async></script>
+    <script src="js/news.min.js" async></script>
+    <script src="js/twitter-widget.min.js" async></script>
+    <script src="js/subscription.min.js" async></script>
+    <script src="js/flickr-gallery.min.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="js/svg4everybody.min.js" async></script>
+  </body>
+</html>

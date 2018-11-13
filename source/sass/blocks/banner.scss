@@ -1,0 +1,41 @@
+.banner {
+  min-height: 260px;
+  background-color: $gray-light;
+  background-image: url(../img/bg-banner-sm.jpg);
+  background-repeat: repeat;
+  background-position: left top;
+}
+
+.banner__wrapper {
+  height: 100%;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 496px 260px;
+}
+
+.banner__promo {
+  width: calc(100vw - 20px);
+  max-width: 380px;
+  margin-left: auto;
+}
+
+.banner__box {
+  display: flex;
+}
+
+.banner__price {
+  flex-shrink: 0;
+  align-self: self-start;
+  margin-left: 0;
+  margin-right: 20px;
+  margin-top: 8px;
+}
+
+@media (min-width: $width-lg) {
+  .banner__promo {
+    margin-right: 40px;
+  }
+}

@@ -1,0 +1,11 @@
+.logo {
+  font-family: $font-logo;
+  @include set-font(26px, 25px, 500, $green);
+  letter-spacing: -0.65px;
+  text-transform: uppercase;
+}
+
+.logo__link {
+  font: inherit;
+  color: inherit;
+}

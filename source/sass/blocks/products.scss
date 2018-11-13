@@ -1,0 +1,140 @@
+.products {
+  padding-top: 30px;
+  background-color: $gray-light;
+}
+
+.products:nth-child(2n) {
+  padding-top: 10px;
+  padding-bottom: 26px;
+}
+
+.products--catalogue {
+  .products__title {
+    padding-bottom: 10px;
+  }
+
+  .products__list {
+    margin-top: 18px;
+  }
+}
+
+.products__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products--catalogue .products__row {
+  flex-wrap: wrap;
+}
+
+.products__title {
+  margin-right: 20px;
+}
+
+.products__view-option {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding-top: 10px;
+  margin-left: 10px;
+  vertical-align: bottom;
+  font-size: 0;
+  border: 1px solid $btn-color;
+
+  svg {
+    position: absolute;
+    left: 7px;
+    fill: $btn-color;
+  }
+
+  &:hover,
+  &:active {
+    border-color: $green;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.products__view {
+  @include set-font(0.875rem, 1.875rem, 700, $btn-color);
+  margin-right: 20px;
+  padding-bottom: 10px;
+
+  .view-active {
+    border-color: $gray-icons;
+  }
+}
+
+.products__view-tile svg {
+  top: 7px;
+}
+
+.products__view-list svg {
+  top: 8px;
+}
+
+.products__show {
+  margin-left: 20px;
+}
+
+.products__select-wrapper {
+  position: relative;
+
+  &::before {
+    @include pseudo-absolute(14px, 14px);
+    top: 9px;
+    right: 12px;
+    background-color: $btn-color;
+    border-radius: 50%;
+    z-index: 50;
+  }
+
+  &::after {
+    @include pseudo-absolute(6px, 6px);
+    top: 12px;
+    right: 16px;
+    background-color: transparent;
+    border: 2px solid $gray-light;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+    z-index: 60;
+  }
+}
+
+.products__sort {
+  margin-bottom: 10px;
+  text-align-last: center;
+  appearance: none;
+}
+
+.products__sort option {
+  color: $btn-color;
+}
+
+.products__list {
+  @include list-reset;
+  margin-top: 28px;
+}
+
+.products__list--tile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $width-md) {
+  .products__list--tile {
+    flex-direction: row;
+  }
+}

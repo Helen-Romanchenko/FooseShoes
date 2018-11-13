@@ -1,0 +1,50 @@
+.actions {
+  @include list-reset;
+  font-size: 0;
+}
+
+.actions__item {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 2px;
+  vertical-align: top;
+  background-color: $white;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  svg {
+    position: absolute;
+    left: 12px;
+    fill: $gray-icons;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.actions__item--view svg {
+  top: 15px;
+}
+
+.actions__item--wishlist svg {
+  top: 12px;
+}
+
+.actions__item--share svg,
+.actions__item--buy svg {
+  top: 13px;
+}
+
+.actions__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+
+  &:hover svg,
+  &:active svg {
+    fill: $green;
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+  @include inner;
+}
+
+.container--wide {
+  @include inner--wide;
+}
+

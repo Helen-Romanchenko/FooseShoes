@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Aller";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: local("Aller Light"),
+         local("Aller-Light"),
+         url("../fonts/Aller-Light.woff2") format("woff2"),
+         url("../fonts/Aller-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aller";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local("Aller Regular"),
+         local("Aller-Regular"),
+         url("../fonts/Aller-Regular.woff2") format("woff2"),
+         url("../fonts/Aller-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aller";
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: local("Aller Italic"),
+         local("Aller-Italic"),
+         url("../fonts/Aller-Italic.woff2") format("woff2"),
+         url("../fonts/Aller-Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aller";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local("Aller Bold"),
+         local("Aller-Bold"),
+         url("../fonts/Aller-Bold.woff2") format("woff2"),
+         url("../fonts/Aller-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "STHeitiSC";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/STHeitiSC-Medium.woff2") format("woff2"),
+         url("../fonts/STHeitiSC-Medium.woff") format("woff");
+}

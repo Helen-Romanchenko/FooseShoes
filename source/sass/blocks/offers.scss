@@ -1,0 +1,82 @@
+.offers {
+  background-color: $dark-gray1;
+}
+
+.offers__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offers__block {
+  display: flex;
+  width: 300px;
+  height: 180px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  color: $white;
+  background-repeat: no-repeat;
+  background-color: $gray-light;
+  background-position: center center;
+  background-size: 300px auto;
+
+  &:first-child {
+    margin-top: 25px;
+  }
+}
+
+.offers__block--sale {
+  background-image: url("../img/bg-sales.jpg");
+}
+
+.offers__block--special {
+  background-image: url("../img/bg-special.jpg");
+}
+
+.offers__block--must-have {
+  background-image: url("../img/bg-must-have.jpg");
+}
+
+.offers__link {
+  margin: auto;
+  padding: 18px 25px;
+  font-family: $font-main;
+  @include set-font(1.5625rem, 1.5625rem, 300, $white);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba($dark-gray1, 0.75);
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:active {
+    color: $green;
+    background-color: rgba($dark-gray1, 0.9);;
+  }
+}
+
+@media (min-width: $width-md) {
+  .offers__content {
+    flex-direction: row;
+  }
+
+  .offers__block {
+    width: 220px;
+    margin: 25px 0;
+  }
+
+  .offers__block--special .offers__link {
+    padding: 18px 9px;
+  }
+}
+
+@media (min-width: $width-lg) {
+  .offers__block {
+    width: 300px;
+  }
+
+  .offers__block--special .offers__link {
+    padding: 18px 25px;
+  }
+}

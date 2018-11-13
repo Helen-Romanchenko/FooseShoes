@@ -1,0 +1,52 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin set-font($size, $line-height, $weight, $font-color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $font-color;
+}
+
+@mixin pseudo-absolute($width, $height) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $height;
+}
+
+@mixin inner {
+  width: auto;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: $width-md) {
+    width: 720px;
+  }
+  @media (min-width: $width-lg) {
+    width: 960px;;
+  }
+}
+
+@mixin inner--wide {
+  width: auto;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: $width-md) {
+    width: 720px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (min-width: $width-lg) {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+

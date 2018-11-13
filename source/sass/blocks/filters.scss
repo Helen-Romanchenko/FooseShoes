@@ -1,0 +1,102 @@
+.filters {
+  background-color: $dark-gray2;
+}
+
+.filters__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.filters__title {
+  display: inline-block;
+  width: 75%;
+  margin-right: auto;
+  margin-top: 15px;
+  color: $white;
+}
+
+.filters__select-wrapper {
+  position: relative;
+
+  &::before {
+    @include pseudo-absolute(14px, 14px);
+    bottom: 23px;
+    right: 22px;
+    background-color: $white;
+    border-radius: 50%;
+    z-index: 50;
+  }
+
+  &::after {
+    @include pseudo-absolute(6px, 6px);
+    bottom: 28px;
+    right: 26px;
+    background-color: transparent;
+    border: 2px solid $dark-gray1;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+    z-index: 60;
+  }
+}
+
+.filters__select {
+  width: 220px;
+  height: 3.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding-left: 5px;
+  @include set-font(1.125rem, 1.2rem, 400, $white);
+  appearance: none;
+  text-align-last: center;
+  text-align: center;
+  background-color: $dark-gray1;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* CAUTION: IE hackery ahead */
+select.filters__select::-ms-expand,
+select.products__sort::-ms-expand  {
+    display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select.filters__select,
+    select.products__sort {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+
+@media (min-width: 480px) {
+  .filters__select-wrapper {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $width-lg) {
+  .filters__title {
+    margin-left: 80px;
+    width: initial;
+  }
+
+  .filters__select {
+    width: 220px;
+    height: 3.75rem;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}

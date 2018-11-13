@@ -1,0 +1,32 @@
+.promo {
+  width: 300px;
+  font-family: $font-main;
+}
+
+.promo__price {
+  display: inline-block;
+  margin: 0;
+  margin-right: 1.25rem;
+  margin-bottom: 1.0625rem;
+  padding: 1.6875rem 0.625rem;
+  @include set-font(0.8125rem, 0.8125rem, 700, $white);
+  background-color: $green;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 0.6875rem;
+  @include set-font(2.5rem, 2.5rem, 300, $dark-gray1);
+}
+
+.promo__description {
+  @include set-font(1.25rem, 1.2, 300, $dark-gray1);
+  margin: 0;
+  margin-bottom: 0.8125rem;
+}
+
+@media (min-width: $width-md) {
+  .promo {
+    width: 385px;
+  }
+}
