@@ -31,14 +31,14 @@ This template was used as a study project for improving skills in coding HTML, C
 5. HTML5 + CSS3 + JavaScript + JQuery + Ajax + SVG + BEM + SCSS + Gulp.
 
 6. Implemented interactivity effects:
-* static and dynamic search;
-* login and register pop-ups created according to the site general design;
-* applying Slick library for the slider;
-* providing changing content in the blog news every 5 seconds;
-* providing changing content in the Twitter widget every 5 seconds;
-* applying Fancybox Plugin for Flickr widget;
-* saving data to LocalStorage from forms;
-* changing the grid on the Product page.
+  * static and dynamic search;
+  * login and register pop-ups created according to the site general design;
+  * applying Slick library for the slider;
+  * providing changing content in the blog news every 5 seconds;
+  * providing changing content in the Twitter widget every 5 seconds;
+  * applying Fancybox Plugin for Flickr widget;
+  * saving data to LocalStorage from forms;
+  * changing the grid on the Product page.
 
 7. All assets are minified, images and SVGs are optimized
 
