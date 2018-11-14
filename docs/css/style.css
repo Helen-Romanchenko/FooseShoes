@@ -2567,6 +2567,9 @@ select.products__sort::-ms-expand {
     margin-top: 0.5rem;
     font-style: italic; }
 
+.additional__block--news a:-webkit-any-link {
+  color: inherit; }
+
 .additional__news {
   display: none; }
 

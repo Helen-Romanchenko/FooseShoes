@@ -43,6 +43,10 @@
   }
 }
 
+.additional__block--news a:-webkit-any-link {
+  color: inherit;
+}
+
 .additional__news {
   display: none;
 }
