@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $.getJSON('../data/news.json', function (data) {
+  $.getJSON('data/news.json', function (data) {
     $.each(data, function (key, value) {
       $('#news-list').append('<div class="additional__news"><div class="additional__news-content"><div class="additional__news-date"><span>'+value.month+'</span><br>'+value.day+'</div><a class="additional__news-link" href="#"><p class="additional__news-title">'+value.title+'</p><p class="additional__news-subtitle">'+value.text+'</p></a></div></div></div>');
     });

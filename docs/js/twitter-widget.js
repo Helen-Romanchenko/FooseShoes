@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $.getJSON('../data/twitter.json', function (data) {
+  $.getJSON('data/twitter.json', function (data) {
     $.each(data, function (key, value) {
       $('#twitter-widget').append('<div class="widgets__tweet"><p class="widgets__text"><em>'+value.nameLink1+'</em>'+value.text+'<em>'+value.nameLink2+'</em><span class="widgets__tweet-date">'+value.date+'</span></p></div>');
     });

@@ -44,7 +44,7 @@ $(document).ready(function() {
     searchTopAutocomplete.html('');
     var searchField = searchTopInput.val();
     var expression = new RegExp(searchField, "i");
-    $.getJSON('../data/search-autocomplete.json', function(data) {
+    $.getJSON('data/search-autocomplete.json', function(data) {
       $.each(data, function(key, value){
         if (value.request.search(expression) != -1 && searchField !== "") {
           searchTopAutocomplete.show();
