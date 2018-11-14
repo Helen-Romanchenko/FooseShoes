@@ -2599,7 +2599,9 @@ select.products__sort::-ms-expand {
     font-size: 0.625rem; }
 
 .additional__news-link {
-  color: inherit; }
+  color: #242424; }
+  .additional__news-link:hover, .additional__news-link:active {
+    color: #242424; }
 
 .additional__news-title,
 .additional__news-subtitle {

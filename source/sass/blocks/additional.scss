@@ -77,7 +77,12 @@
 }
 
 .additional__news-link {
-  color: inherit;
+  color: $dark-gray1;
+
+  &:hover,
+  &:active {
+    color: $dark-gray1;
+  }
 }
 
 .additional__news-title,
