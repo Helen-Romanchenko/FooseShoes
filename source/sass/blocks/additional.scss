@@ -76,10 +76,15 @@
   }
 }
 
+.additional__news-link {
+  color: inherit;
+}
+
 .additional__news-title,
 .additional__news-subtitle {
   max-width: 570px;
   margin: 0;
+  color: $dark-gray1;
 }
 
 .additional__news-title {
